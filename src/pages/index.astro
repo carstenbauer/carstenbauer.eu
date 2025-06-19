@@ -32,38 +32,28 @@ const work = await Promise.all(
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
+    <div class="flex justify-center"><img src="/carstenbauer.jpg" style="margin-bottom: 2em; width: 98%;" class="rounded-xl"></div>
     <h4 class="animate font-semibold text-black dark:text-white">
-      Hi, I'm Nano <span class="text-xl">👋🏻</span> 
+      <!-- Carsten Bauer <span class="text-xl">👋🏻</span>  -->
+      About Me
     </h4>
     <div class="space-y-16">
       <section>
         <article class="space-y-4">
           <p class="animate">
-            I am a minimal, seo friendly, accessible portfolio and blog for developers. 
-            I am an even more lightweight version of my popular theme
-            <Link href="https://github.com/markhorn-dev/astro-sphere" aria-label="Astro Sphere on Github" external>
-              Astro Sphere
-            </Link>.
-            I have a lighthouse scores of 100 across the board for performance, 
-            accesibility, best practices and SEO.
+            I am a quantum physicist and a manager for software and AI projects at the <Link href="https://www.dlr.de/en/ar" aria-label="German Space Agency at DLR" external>
+              German Space Agency at DLR
+            </Link>. I have previously worked as a research software engineer and scientific advisor within the National High-Performance Computing Alliance (NHR).
+            Through Bauer Consulting, I offer consulting and training services, specializing on HPC and effective, professional presenting.
+            I contribute to several open source projects, most notably <Link href="https://www.julialang.org" external>Julia</Link>.
           </p>
           <p class="animate">
-            I come packed with full type safety, a sitemap, an rss feed, markdown 
-            and mdx support (use components in your markdown) through astro integrations.
-            I am styled with tailwind and come preconfigured with light, dark and 
-            system/os theme preferences out of the box.
-          </p>
-          <p class="animate">
-            Visit
-            <Link href="https://github.com/markhorn-dev/astro-nano" aria-label="Astro Nano on Github" external>
-              Astro Nano on Github
-            </Link>
-            to fork the repository, read the docs or one-click deploy on Vercel or Netlify. 
+            Beyond my professional pursuits, I’m a proud father to a little girl, enjoy a wide range of sports — especially football, dancing, and paragliding — and love spending time in nature.
           </p>
         </article>
       </section>
 
-      <section class="animate space-y-6">
+      <!-- <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
             Latest posts
@@ -79,9 +69,9 @@ const work = await Promise.all(
             </li>
           ))}
         </ul>
-      </section>
+      </section> -->
 
-      <section class="animate space-y-6">
+      <!-- <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
             Work Experience
@@ -108,9 +98,9 @@ const work = await Promise.all(
             </li>
           ))}
         </ul>
-      </section>
+      </section> -->
 
-      <section class="animate space-y-6">
+      <!-- <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
             Recent projects
@@ -126,16 +116,17 @@ const work = await Promise.all(
             </li>
           ))}
         </ul>
-      </section>
+      </section> -->
 
       <section class="animate space-y-4">
         <h5 class="font-semibold text-black dark:text-white">
-          Let's Connect
+          Contact
         </h5>
         <article>
           <p>
-            If you want to get in touch with me about something or just to say hi,
-            reach out on social media or send me an email.
+            If you want to get in touch with me, send me an <Link href={`mailto:${SITE.EMAIL}`} aria-label={`Email ${SITE.NAME}`}>
+              email
+            </Link>.
           </p>
         </article>
         <ul class="flex flex-wrap gap-2">
@@ -144,14 +135,14 @@ const work = await Promise.all(
               <Link href={SOCIAL.HREF} external aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}>
                 {SOCIAL.NAME}
               </Link>
-              {"/"}
+              {`|`}
             </li>
           ))}
-          <li class="line-clamp-1">
+          <!-- <li class="line-clamp-1">
             <Link href={`mailto:${SITE.EMAIL}`} aria-label={`Email ${SITE.NAME}`}>
               {SITE.EMAIL}
             </Link>
-          </li>
+          </li> -->
         </ul>
       </section>
     </div>
