@@ -1,76 +1,38 @@
 ---
-title: "Astro Sphere"
-description: "Portfolio and blog build with astro."
-date: "Mar 18 2024"
-demoURL: "https://astro-sphere-demo.vercel.app"
-repoURL: "https://github.com/markhorn-dev/astro-sphere"
+title: "Metallic Quantum Criticality and High-Temperature Superconductivity"
+description: "Quantum Monte Carlo simulations on Germany's fastest supercomputer"
+date: "01.01.2020"
+# demoURL: "https://astro-sphere-demo.vercel.app"
+# repoURL: "https://github.com/markhorn-dev/astro-sphere"
 ---
 
-![Astro Sphere Lighthouse Score](/astro-sphere.jpg)
+<!-- <img src="/projects/sdwscales.png" width=50% class="my-10"> -->
+<!-- <img src="/projects/sdw_figures.png" width=100% class="my-10 border border-black"> -->
+<img src="/projects/sdwpd.png" width=100% class="my-10 bg-stone-200 border border-black px-12 py-10 rounded-lg">
 
-Astro Sphere is a static, minimalist, lightweight, lightning fast portfolio and blog theme based on my personal website.
+<!-- #### Partners -->
 
-It is primarily Astro, Tailwind and Typescript, with a very small amount of SolidJS for stateful components.
+#### TLDR
 
-## 🚀 Deploy your own
+Developed the first HPC-ready [quantum Monte Carlo code](https://github.com/carstenbauer/dqmc) in [Julia](https://julialang.org/). Ran large-scale simulations (~10M CPU-core hours, ~80TB of data) on Germany's fastet supercomputer [JUWELS](https://www.fz-juelich.de/en/ias/jsc/systems/supercomputers/juwels). Gained insights into the metallic $O(3)$ symmetric antiferromagnetic quantum critical point and the emergence of high-temperature superconductivity.
 
-<div class="flex gap-2">
-  <a target="_blank" aria-label="Deploy with Vercel" href="https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-sphere">
-    <img src="/deploy_vercel.svg" />
-  </a>
-  <a target="_blank" aria-label="Deploy with Netlify" href="https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-sphere">
-    <img src="/deploy_netlify.svg" />
-  </a>
+#### Partners
+
+<div style="display: flex; align-items: center; gap: 1rem;">
+  <img src="/logos/stanford.svg" class="dark:invert" width="22%">
+  <img src="/logos/uoc.svg" class="dark:invert" width="22%">
+  <img src="/logos/weizmann.svg" class="dark:invert" width="40%">
 </div>
 
-## 📋 Features
+#### Abstract
 
-- ✅ 100/100 Lighthouse performance
-- ✅ Responsive
-- ✅ Accessible
-- ✅ SEO-friendly
-- ✅ Typesafe
-- ✅ Minimal style
-- ✅ Light/Dark Theme
-- ✅ Animated UI
-- ✅ Tailwind styling
-- ✅ Auto generated sitemap
-- ✅ Auto generated RSS Feed
-- ✅ Markdown support
-- ✅ MDX Support (components in your markdown)
-- ✅ Searchable content (posts and projects)
+We present numerically exact results from sign-problem free quantum Monte Carlo simulations for a spin-fermion model near an O(3) symmetric antiferromagnetic (AFM) quantum critical point. We find a hierarchy of energy scales that emerges near the quantum critical point. At high-energy scales, there is a broad regime characterized by Landau-damped order parameter dynamics with dynamical critical exponent 𝑧=2, while the fermionic excitations remain coherent. The quantum critical magnetic fluctuations are well described by Hertz-Millis theory, except for a 𝑇−2 divergence of the static AFM susceptibility. This regime persists down to a lower-energy scale, where the fermions become overdamped and, concomitantly, a transition into a 𝑑-wave superconducting state occurs. These findings resemble earlier results for a spin-fermion model with easy-plane AFM fluctuations of an O(2) spin density wave (SDW) order parameter, despite noticeable differences in the perturbative structure of the two theories. In the O(3) case, perturbative corrections to the spin-fermion vertex are expected to dominate at an additional energy scale, below which the 𝑧=2 behavior breaks down, leading to a novel 𝑧=1 fixed point with emergent local nesting at the hot spots [Schlief et al., Phys. Rev. X 7, 021010 (2017)]. Motivated by this prediction, we also consider a variant of the model where the hot spots are nearly locally nested. Within the available temperature range in our study (𝑇≥𝐸𝐹/200), we find substantial deviations from the 𝑧=2 Hertz-Millis behavior, but no evidence for the predicted 𝑧=1 criticality.
 
-## 💯 Lighthouse score
-![Astro Sphere Lighthouse Score](/lighthouse.png)
+#### Resources
 
-## 🕊️ Lightweight
-All pages under 100kb (including fonts)
-
-## ⚡︎ Fast
-Rendered in ~40ms on localhost
-
-## 📄 Configuration
-
-The blog posts on the demo serve as the documentation and configuration.
-
-## 💻 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-Replace npm with your package manager of choice. `npm`, `pnpm`, `yarn`, `bun`, etc
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run sync`            | Generates TypeScript types for all Astro modules.|
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-| `npm run lint`            | Run ESLint                                       |
-| `npm run lint:fix`        | Auto-fix ESLint issues                           |
-
-## 🏛️ License
-
-MIT
+- Paper: https://link.aps.org/doi/10.1103/PhysRevResearch.2.023008
+- Numerics Paper: https://scipost.org/SciPostPhysCore.2.2.011
+- Repository: https://github.com/carstenbauer/dqmc
+- Repository: https://github.com/carstenbauer/StableDQMC.jl
+- Talk: http://carstenbauer.eu/sdwo3_talk.pdf
+- PhD Thesis: http://carstenbauer.eu/Dissertation_CBauer_A5.pdf
