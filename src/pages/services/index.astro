@@ -5,7 +5,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
 import { dateRange } from "@lib/utils";
-import { SITE, HOME, SOCIALS } from "@consts";
+import { SITE, SERVICES } from "@consts";
 
 const blog = (await getCollection("blog"))
   .filter((post) => !post.data.draft)
@@ -33,47 +33,28 @@ const work = await Promise.all(
 );
 ---
 
-<PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
+<PageLayout title={SERVICES.TITLE} description={SERVICES.DESCRIPTION}>
   <Container>
-    <div class="flex justify-center">
+    <!-- <div class="flex justify-center">
       <img
         src="/carstenbauer.jpg"
         style="margin-bottom: 2em; width: 98%;"
         class="rounded-xl"
       />
-    </div>
+    </div> -->
     <h4 class="animate font-semibold text-black dark:text-white">
       <!-- Carsten Bauer <span class="text-xl">👋🏻</span>  -->
-      About Me
+      Consulting & Training
     </h4>
     <div class="space-y-10">
       <section>
         <article class="space-y-4">
           <p class="animate">
-            I am a quantum physicist and a manager for software and AI projects
-            at the <Link
-              href="https://www.dlr.de/en/ar"
-              aria-label="German Space Agency at DLR"
-              external
-            >
-              German Space Agency at DLR
-            </Link>. I have previously worked as a research software engineer
-            and scientific advisor within the National High-Performance
-            Computing Alliance (NHR). Through Bauer Consulting, I offer
-            consulting and training services, specializing on HPC and effective,
-            professional presenting. I contribute to several open source
-            projects, most notably <Link
-              href="https://www.julialang.org"
-              external>Julia</Link
-            >.
-          </p>
-          <p class="animate">
-            Beyond my professional pursuits, I’m a proud father to a little
-            girl, enjoy a wide range of sports — especially football, dancing,
-            and <Link
-              href="/carstenbauer_paragliding.jpg"
-              external>paragliding</Link
-            > — and love spending time in nature.
+            I regularly give workshops at universities and private research
+            institutions, mostly with a focus on scientific numerical computing,
+            high-performance computing and research software engineering. If
+            you're curious, feel free to reach out. I'm looking forward to your
+            inquiry!
           </p>
         </article>
       </section>
@@ -81,7 +62,7 @@ const work = await Promise.all(
       <!-- <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
-            Latest posts
+            Upcoming Workshops
           </h5>
           <Link href="/blog">
             See all posts
@@ -144,38 +125,24 @@ const work = await Promise.all(
       </section> -->
 
       <section class="animate space-y-4">
-        <h5 class="font-semibold text-black dark:text-white">Connect</h5>
+        <h5 class="font-semibold text-black dark:text-white">
+          Julia HPC Workshops
+        </h5>
         <article>
+          <p class="animate">
+            <Link href="/carstenbauer_paragliding.jpg" external>Julia</Link> is a
+            beautiful programming language for numerical computing that is free to
+            use and open source. It explores the tradeoffs in language design for
+            dynamic programming languages and aims to be as accessible as Python
+            while still being as fast as statically compiled languages (eg. C, Fortran).
+          </p>
           <p>
-            If you want to get in touch with me, send me an <Link
-              href={`mailto:${SITE.EMAIL}`}
-              aria-label={`Email ${SITE.NAME}`}
-            >
-              email
-            </Link>.
+            My 4-day course is targeted at researchers who are interested in
+            numerical computing and who want to learn how to write
+            high-performance codes in Julia. To get an impression of the
+            content, check out e.g. this GitHub repository.
           </p>
         </article>
-        <ul class="flex flex-wrap gap-2">
-          {
-            SOCIALS.map((SOCIAL) => (
-              <li class="flex gap-x-2 text-nowrap">
-                <Link
-                  href={SOCIAL.HREF}
-                  external
-                  aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}
-                >
-                  {SOCIAL.NAME}
-                </Link>
-                {`|`}
-              </li>
-            ))
-          }
-          <!-- <li class="line-clamp-1">
-            <Link href={`mailto:${SITE.EMAIL}`} aria-label={`Email ${SITE.NAME}`}>
-              {SITE.EMAIL}
-            </Link>
-          </li> -->
-        </ul>
       </section>
     </div>
   </Container>
