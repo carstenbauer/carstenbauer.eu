@@ -1,7 +1,9 @@
 ---
-title: "Quasiparticle Velocity Renormalization in Graphene"
-description: "Analytical functional renormalization group study"
-date: "01.01.2016"
+title: "Analytical Study of the Quasiparticle Velocity Renormalization in Graphene"
+description: "Frankfurt - University of Florida"
+# title: "Quasiparticle Velocity Renormalization in Graphene"
+# description: "Analytical functional renormalization group study"
+date: "2015"
 # demoURL: "https://astro-sphere-demo.vercel.app"
 # repoURL: "https://github.com/markhorn-dev/astro-sphere"
 ---

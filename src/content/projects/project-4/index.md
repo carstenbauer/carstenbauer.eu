@@ -1,7 +1,9 @@
 ---
-title: "Parallel Quantum Chemistry on Noisy Quantum Computers"
-description: "Quantum-classical algorithm running on (real) quantum hardware"
-date: "01.01.2016"
+title: "Parallel Quantum Chemistry on Noisy Quantum Hardware (IBM)"
+description: "Paderborn - NHR"
+# title: "Parallel Quantum Chemistry on Noisy Quantum Computers"
+# description: "Quantum-classical algorithm running on (real) quantum hardware"
+date: "2022"
 # demoURL: "https://astro-sphere-demo.vercel.app"
 # repoURL: "https://github.com/markhorn-dev/astro-sphere"
 ---

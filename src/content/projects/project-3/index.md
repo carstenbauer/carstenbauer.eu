@@ -1,7 +1,9 @@
 ---
-title: "Machine Learning Non-Fermi Liquid Physics"
-description: "Quantum loop topography of critical metals"
-date: "01.01.2020"
+title: "Machine Learning Quantum Criticality via Quantum Loop Topography"
+description: "Cologne - Cornell"
+# title: "Machine Learning Non-Fermi Liquid Physics"
+# description: "Quantum loop topography of critical metals"
+date: "2021"
 # demoURL: "https://astro-sphere-demo.vercel.app"
 # repoURL: "https://github.com/markhorn-dev/astro-sphere"
 ---

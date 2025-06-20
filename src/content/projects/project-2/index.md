@@ -1,7 +1,9 @@
 ---
-title: "Machine Learning Transport Properties of Quantum Matter"
-description: "Quantum loop topography of superconductivity"
-date: "01.01.2019"
+title: "Machine Learning Superconductivity via Quantum Loop Topography"
+description: "Cologne - Cornell"
+# title: "Machine Learning Transport Properties of Quantum Matter"
+# description: "Quantum loop topography of superconductivity"
+date: "2019"
 # demoURL: "https://astro-sphere-demo.vercel.app"
 # repoURL: "https://github.com/markhorn-dev/astro-sphere"
 ---
