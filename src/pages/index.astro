@@ -5,7 +5,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
 import { dateRange } from "@lib/utils";
-import { SITE, HOME, SOCIALS } from "@consts";
+import { SITE, HOME } from "@consts";
 
 const blog = (await getCollection("blog"))
   .filter((post) => !post.data.draft)
@@ -59,21 +59,21 @@ const work = await Promise.all(
               German Space Agency at DLR
             </Link>. I have previously worked as a research software engineer
             and scientific advisor within the National High-Performance
-            Computing Alliance (NHR). Through Bauer Consulting, I offer
-            consulting and training services, specializing on HPC and effective,
-            professional presenting. I contribute to several open source
-            projects, most notably <Link
-              href="https://www.julialang.org"
-              external>Julia</Link
+            Computing Alliance (NHR). As a freelancer, I offer <Link
+              href="/services">consulting and training</Link
+            > services, specializing on HPC. I contribute to several <Link
+              href="https://github.com/carstenbauer"
+              external>open source projects</Link
+            >, most notably <Link href="https://www.julialang.org" external
+              >Julia</Link
             >.
           </p>
           <p class="animate">
             Beyond my professional pursuits, I’m a proud father to a little
             girl, enjoy a wide range of sports — especially football, dancing,
-            and <Link
-              href="/carstenbauer_paragliding.jpg"
-              external>paragliding</Link
-            > — and love spending time in nature.
+            and <Link href="/carstenbauer_paragliding.jpg" external
+              >paragliding</Link
+            > — and play the drums.
           </p>
         </article>
       </section>
@@ -144,38 +144,40 @@ const work = await Promise.all(
       </section> -->
 
       <section class="animate space-y-4">
-        <h5 class="font-semibold text-black dark:text-white">Connect</h5>
+        <!-- <h5 class="font-semibold text-black dark:text-white">Connect</h5> -->
         <article>
           <p>
-            If you want to get in touch with me, send me an <Link
+            <!-- If you want to get in touch with me, send me an <Link
               href={`mailto:${SITE.EMAIL}`}
               aria-label={`Email ${SITE.NAME}`}
             >
               email
-            </Link>.
+            </Link>. -->
+
+            <!-- <span class="inline-flex gap-2 align-middle">
+              <Icon
+                name="mdi:email"
+                class="text-gray-300 hover:text-black transition text-2xl"
+              />
+              <Icon
+                name="mdi:github"
+                class="text-gray-300 hover:text-black transition text-2xl"
+              />
+              <Icon
+                name="mdi:linkedin"
+                class="text-gray-300 hover:text-black transition text-2xl"
+              />
+              <Icon
+                name="mdi:google"
+                class="text-gray-300 hover:text-black transition text-2xl"
+              />
+              <Icon
+                name="simple-icons:openai"
+                class="text-gray-300 hover:text-black transition text-2xl"
+              />
+            </span> -->
           </p>
         </article>
-        <ul class="flex flex-wrap gap-2">
-          {
-            SOCIALS.map((SOCIAL) => (
-              <li class="flex gap-x-2 text-nowrap">
-                <Link
-                  href={SOCIAL.HREF}
-                  external
-                  aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}
-                >
-                  {SOCIAL.NAME}
-                </Link>
-                {`|`}
-              </li>
-            ))
-          }
-          <!-- <li class="line-clamp-1">
-            <Link href={`mailto:${SITE.EMAIL}`} aria-label={`Email ${SITE.NAME}`}>
-              {SITE.EMAIL}
-            </Link>
-          </li> -->
-        </ul>
       </section>
     </div>
   </Container>

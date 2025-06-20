@@ -1,4 +1,4 @@
-import type { Site, Metadata, Socials } from "@types";
+import type { Site, Metadata } from "@types";
 
 export const SITE: Site = {
   NAME: "Dr. Carsten Bauer",
@@ -14,7 +14,7 @@ export const HOME: Metadata = {
 };
 
 export const SERVICES: Metadata = {
-  TITLE: "BAUER CONSULTING",
+  TITLE: "Services",
   DESCRIPTION: "Astro Nano is a minimal and lightweight blog and portfolio.",
 };
 
@@ -32,18 +32,3 @@ export const PROJECTS: Metadata = {
   TITLE: "Projects",
   DESCRIPTION: "A collection of my projects, with links to repositories and demos.",
 };
-
-export const SOCIALS: Socials = [
-  // { 
-  //   NAME: "twitter-x",
-  //   HREF: "https://twitter.com/markhorn_dev",
-  // },
-  { 
-    NAME: "github",
-    HREF: "https://github.com/carstenbauer"
-  },
-  { 
-    NAME: "linkedin",
-    HREF: "https://www.linkedin.com/in/crstnbr",
-  }
-];

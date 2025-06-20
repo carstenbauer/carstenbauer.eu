@@ -2,6 +2,8 @@
 import Container from "@components/Container.astro";
 import { SITE } from "@consts";
 import BackToTop from "@components/BackToTop.astro";
+import { Icon } from "astro-icon/components";
+import Link from "@components/Link.astro";
 ---
 
 <footer class="animate">
@@ -12,8 +14,43 @@ import BackToTop from "@components/BackToTop.astro";
       </div>
     </div> -->
     <div class="flex justify-between items-center opacity-60">
+      <div>&copy; 2025 Carsten Bauer</div>
       <div>
-        &copy; 2025 Carsten Bauer
+        <span class="inline-flex gap-2 align-middle">
+          <Link href="mailto:mail@carstenbauer.eu" external>
+            <Icon name="mdi:email" class="hover:text-black size-4 transition" />
+          </Link>
+          <Link href="https://github.com/carstenbauer" external>
+            <Icon
+              name="mdi:github"
+              class="hover:text-black size-4 transition"
+            />
+          </Link>
+          <Link href="https://www.linkedin.com/in/crstnbr/" external>
+            <Icon
+              name="mdi:linkedin"
+              class="hover:text-black size-4 transition"
+            />
+          </Link>
+          <Link
+            href="https://www.google.com/search?q=Carsten+Bauer+Cologne"
+            external
+          >
+            <Icon
+              name="mdi:google"
+              class="hover:text-black size-4 transition"
+            />
+          </Link>
+          <Link
+            href="https://chatgpt.com/?q=What+do+you+know+about+Carsten+Bauer+living+in+Cologne%3F"
+            external
+          >
+            <Icon
+              name="simple-icons:openai"
+              class="hover:text-black size-4 transition"
+            />
+          </Link>
+        </span>
       </div>
       <div class="flex flex-wrap gap-1 items-center">
         <button
