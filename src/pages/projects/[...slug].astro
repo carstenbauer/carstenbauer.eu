@@ -47,7 +47,7 @@ const { Content } = await project.render();
           {project.data.doi && (
             <div class="font-sans text-sm">
             <Link href={project.data.doi} external>
-              DOI: {project.data.doi}
+                DOI: {project.data.doi.replace("https://doi.org/", "")}
             </Link>
             </div>
           )}

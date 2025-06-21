@@ -6,6 +6,8 @@ description: "Cologne - Cornell"
 date: "2021"
 # demoURL: "https://astro-sphere-demo.vercel.app"
 # repoURL: "https://github.com/markhorn-dev/astro-sphere"
+doi: "https://doi.org/10.1103/PhysRevLett.127.046601"
+category: "physics"
 ---
 
 <!-- <img src="/projects/sdwscales.png" width=50% class="my-10"> -->
@@ -33,5 +35,5 @@ Non-Fermi liquid physics is ubiquitous in strongly correlated metals, manifestin
 
 #### Resources
 
-- Paper: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.127.046601
-- PhD Thesis: http://carstenbauer.eu/Dissertation_CBauer_A5.pdf
+[Full Paper](/paper/PhysRevLett.127.046601.pdf) ⋅
+[PhD Thesis](/files/carstenbauer_phd_thesis.pdf)

@@ -6,7 +6,7 @@ import ArrowCard from "@components/ArrowCard.astro";
 import { PROJECTS } from "@consts";
 
 const projects = (await getCollection("projects"))
-  .filter(project => !project.data.draft)
+  .filter((project) => !project.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
@@ -19,19 +19,37 @@ const projects = (await getCollection("projects"))
         class="rounded-xl"
       />
     </div>
-    <div class="space-y-10">
+    <section class="animate space-y-10">
       <div class="animate font-semibold text-black dark:text-white">
-        Science Projects
+        Physics Projects
       </div>
       <ul class="animate flex flex-col gap-4">
         {
-          projects.map((project) => (
-            <li>
-              <ArrowCard entry={project}/>
-            </li>
-          ))
+          projects
+            .filter((project) => project.data.category === "physics")
+            .map((project) => (
+              <li>
+                <ArrowCard entry={project} />
+              </li>
+            ))
         }
       </ul>
-    </div>
+    </section>
+    <section class="animate space-y-10">
+      <div class="animate font-semibold text-black dark:text-white"></div>
+        Computing Projects
+      </div>
+      <ul class="animate flex flex-col gap-4">
+        {
+          projects
+            .filter((project) => project.data.category === "computing")
+            .map((project) => (
+              <li>
+                <ArrowCard entry={project} />
+              </li>
+            ))
+        }
+      </ul>
+    <!-- </section> -->
   </Container>
 </PageLayout>

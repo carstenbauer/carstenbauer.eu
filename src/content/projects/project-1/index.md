@@ -7,6 +7,7 @@ date: "01.01.2020"
 doi: "https://doi.org/10.1103/PhysRevResearch.2.023008"
 # demoURL: "https://astro-sphere-demo.vercel.app"
 # repoURL: "https://github.com/markhorn-dev/astro-sphere"
+category: "physics"
 ---
 
 <!-- <span class="font-sans">DOI: 10.1103/PhysRevResearch.2.023008</span> -->
@@ -37,7 +38,7 @@ We present numerically exact results from sign-problem free quantum Monte Carlo 
 
 [Full Paper](/paper/PhysRevResearch.2.023008.pdf) ⋅
 [Code Repository](https://github.com/carstenbauer/dqmc) ⋅
-[Talk](/talks/sdwo3_talk.pdf) ⋅
-[PhD Thesis](/files/Dissertation_CBauer_A5.pdf) ⋅
+[Talk](/talks/sdwo3.pdf) ⋅
+[PhD Thesis](/files/carstenbauer_phd_thesis.pdf) ⋅
 [Full Numerics Paper](/paper/SciPostPhysCore_2_2_011.pdf) ⋅
 [Numerics Code Repository](https://github.com/carstenbauer/StableDQMC.jl)

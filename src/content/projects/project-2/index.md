@@ -6,6 +6,8 @@ description: "Cologne - Cornell"
 date: "2019"
 # demoURL: "https://astro-sphere-demo.vercel.app"
 # repoURL: "https://github.com/markhorn-dev/astro-sphere"
+doi: "https://doi.org/10.1103/PhysRevB.99.161120"
+category: "physics"
 ---
 
 <!-- <img src="/projects/sdwscales.png" width=50% class="my-10"> -->
@@ -33,6 +35,6 @@ Quantum many-fermion systems give rise to diverse states of matter that often re
 
 #### Resources
 
-- Paper: https://journals.aps.org/prb/abstract/10.1103/PhysRevB.99.161120
-- Book article: http://www.john-von-neumann-institut.de/nic/EN/News/Symposium/NIC-Symposium-2020/Proceedings/_node.html
-- PhD Thesis: http://carstenbauer.eu/Dissertation_CBauer_A5.pdf
+[Full Paper](/paper/PhysRevB.99.161120.pdf) ⋅
+[Book Article](http://www.john-von-neumann-institut.de/nic/EN/News/Symposium/NIC-Symposium-2020/Proceedings/_node.html) ⋅
+[PhD Thesis](/files/carstenbauer_phd_thesis.pdf)
