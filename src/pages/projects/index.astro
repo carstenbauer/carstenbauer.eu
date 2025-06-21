@@ -15,11 +15,14 @@ const projects = (await getCollection("projects"))
     <div class="flex justify-center">
       <img
         src="/blackboard.png"
-        style="margin-bottom: 2em; width: 98%;"
+        style="margin-bottom: 0.5em; width: 100%;"
         class="rounded-xl"
       />
     </div>
-    <section class="animate space-y-10">
+    <div class="text-xs text-stone-400 text-right">
+      Blackboard in my office at the University of Chicago, 2018
+    </div>
+    <section class="animate space-y-10 mt-4">
       <div class="animate font-semibold text-black dark:text-white">
         Physics Projects
       </div>
@@ -35,21 +38,35 @@ const projects = (await getCollection("projects"))
         }
       </ul>
     </section>
-    <section class="animate space-y-10">
-      <div class="animate font-semibold text-black dark:text-white"></div>
+
+    <!-- <div class="flex justify-center mt-28"> -->
+    <div class="flex justify-center mt-40">
+      <img
+        src="/noctua2_bright_full.jpg"
+        style="margin-bottom: 0.5em; width: 100%;"
+        class="rounded-xl"
+      />
+    </div>
+    <div class="text-xs text-stone-400 text-right">
+      National supercomputer "Noctua 2" in Paderborn, 2021
+    </div>
+    <!-- <section class="animate space-y-10 mb-10 mt-14"> -->
+    <section class="animate space-y-10 mb-10 mt-4">
+      <div class="animate font-semibold text-black dark:text-white">
         Computing Projects
       </div>
-      <ul class="animate flex flex-col gap-4">
-        {
-          projects
-            .filter((project) => project.data.category === "computing")
-            .map((project) => (
-              <li>
-                <ArrowCard entry={project} />
-              </li>
-            ))
-        }
-      </ul>
+    </section>
+    <ul class="animate flex flex-col gap-4">
+      {
+        projects
+          .filter((project) => project.data.category === "computing")
+          .map((project) => (
+            <li>
+              <ArrowCard entry={project} />
+            </li>
+          ))
+      }
+    </ul>
     <!-- </section> -->
   </Container>
 </PageLayout>
