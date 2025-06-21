@@ -6,7 +6,8 @@ doi: "https://doi.org/10.1103/PhysRevResearch.4.033160"
 category: "computing"
 ---
 
-<img src="/projects/quantumcircuit.svg" width=100% class="my-10 p-10 bg-stone-200 border border-black rounded-lg">
+<img src="/projects/qchybrid.svg" width=100% class="my-10 px-32 py-10 bg-stone-200 border border-black rounded-lg">
+<!-- <img src="/projects/quantumcircuit.svg" width=100% class="my-10 p-10 bg-stone-200 border border-black rounded-lg"> -->
 
 #### Summary
 

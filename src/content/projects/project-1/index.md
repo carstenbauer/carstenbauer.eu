@@ -3,7 +3,7 @@ title: "Quantum Monte Carlo Simulations of Metallic Quantum Criticality"
 description: "Cologne - Stanford - Weizmann"
 date: "01.02.2020"
 doi: "https://doi.org/10.1103/PhysRevResearch.2.023008"
-category: "physics"
+category: "physics, computing"
 ---
 
 <!-- <img src="/projects/sdwscales.png" width=50% class="my-10"> -->

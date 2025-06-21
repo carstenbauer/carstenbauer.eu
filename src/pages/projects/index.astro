@@ -12,24 +12,26 @@ const projects = (await getCollection("projects"))
 
 <PageLayout title={PROJECTS.TITLE} description={PROJECTS.DESCRIPTION}>
   <Container>
-    <div class="flex justify-center">
-      <img
-        src="/blackboard.png"
-        style="margin-bottom: 0.5em; width: 100%;"
-        class="rounded-xl"
-      />
-    </div>
-    <div class="text-xs text-stone-400 text-right">
-      Blackboard in my office at the University of Chicago, 2018
-    </div>
-    <section class="animate space-y-10 mt-4">
-      <div class="animate font-semibold text-black dark:text-white">
+    <section class="animate mt-4">
+      <div class="animate font-semibold text-black dark:text-white mb-10">
         Physics Projects
+      </div>
+      <div class="flex justify-center">
+        <img
+          src="/blackboard.png"
+          style="margin-bottom: 0.5em; width: 98%;"
+          class="rounded-lg"
+        />
+      </div>
+      <div class="text-sm text-stone-500 text-right mb-10" style="width: 99%">
+        Blackboard in my office at the University of Chicago, 2018
       </div>
       <ul class="animate flex flex-col gap-4">
         {
           projects
-            .filter((project) => project.data.category === "physics")
+            .filter((project) =>
+              project.data.category?.toLowerCase().includes("physics"),
+            )
             .map((project) => (
               <li>
                 <ArrowCard entry={project} />
@@ -39,27 +41,27 @@ const projects = (await getCollection("projects"))
       </ul>
     </section>
 
-    <!-- <div class="flex justify-center mt-28"> -->
-    <div class="flex justify-center mt-40">
-      <img
-        src="/noctua2_bright_full.jpg"
-        style="margin-bottom: 0.5em; width: 100%;"
-        class="rounded-xl"
-      />
-    </div>
-    <div class="text-xs text-stone-400 text-right">
-      National supercomputer "Noctua 2" in Paderborn, 2021
-    </div>
-    <!-- <section class="animate space-y-10 mb-10 mt-14"> -->
-    <section class="animate space-y-10 mb-10 mt-4">
-      <div class="animate font-semibold text-black dark:text-white">
+    <section class="animate mt-20">
+      <div class="animate font-semibold text-black dark:text-white mb-10">
         Computing Projects
+      </div>
+      <div class="flex justify-center">
+        <img
+          src="/noctua2_bright_full.jpg"
+          style="margin-bottom: 0.5em; width: 98%;"
+          class="rounded-lg"
+        />
+      </div>
+      <div class="text-sm text-stone-500 text-right mb-10" style="width: 99%">
+        National supercomputer "Noctua 2" in Paderborn, 2021
       </div>
     </section>
     <ul class="animate flex flex-col gap-4">
       {
         projects
-          .filter((project) => project.data.category === "computing")
+          .filter((project) =>
+            project.data.category?.toLowerCase().includes("computing"),
+          )
           .map((project) => (
             <li>
               <ArrowCard entry={project} />
